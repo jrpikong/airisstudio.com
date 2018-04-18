@@ -55,7 +55,7 @@
                     </div>
                     <div class="photo-it">
                         <div class="img-ft">
-                            <img class="img-ft" src="{{asset('{{asset('{{asset('{{asset('{{asset('images/uploads/ft1.jpg" alt="">
+                            <img class="img-ft" src="{{asset('images/uploads/ft1.jpg')}}" alt="">
                             <div class="hover-inner-ft">
                                 <div class="icon">
                                     <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 2</a>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="img-ft">
-                            <img src="{{asset('{{asset('{{asset('{{asset('{{asset('images/uploads/ft2.jpg" alt="">
+                            <img src="{{asset('images/uploads/ft2.jpg')}}" alt="">
                             <div class="hover-inner-ft">
                                 <div class="icon">
                                     <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 2</a>
@@ -74,7 +74,7 @@
                         </div>
 
                         <div class="img-ft">
-                            <img src="{{asset('{{asset('{{asset('{{asset('{{asset('images/uploads/ft3.jpg" alt="">
+                            <img src="{{asset('images/uploads/ft3.jpg')}}" alt="">
                             <div class="hover-inner-ft">
                                 <div class="icon">
                                     <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 2</a>
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="img-ft">
-                            <img src="{{asset('{{asset('{{asset('{{asset('{{asset('images/uploads/ft4.jpg" alt="">
+                            <img src="{{asset('images/uploads/ft4.jpg')}}" alt="">
                             <div class="hover-inner-ft">
                                 <div class="icon">
                                     <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 2</a>
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="img-ft">
-                            <img src="{{asset('{{asset('{{asset('{{asset('{{asset('images/uploads/ft5.jpg" alt="">
+                            <img src="{{asset('images/uploads/ft5.jpg')}}" alt="">
                             <div class="hover-inner-ft">
                                 <div class="icon">
                                     <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 2</a>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="img-ft">
-                            <img src="{{asset('{{asset('{{asset('{{asset('{{asset('images/uploads/ft6.jpg" alt="">
+                            <img src="{{asset('images/uploads/ft6.jpg')}}" alt="">
                             <div class="hover-inner-ft">
                                 <div class="icon">
                                     <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 2</a>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <img class="ft-line" src="{{asset('{{asset('{{asset('{{asset('{{asset('images/uploads/div-line.png" alt="line">
+            <img class="ft-line" src="{{asset('images/uploads/div-line.png')}}" alt="line">
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">

@@ -382,6 +382,7 @@
             </div>
         </div>
     </div>
+    
     <div class="flowerarrival trending trendingv4">
         <div class="container">
             <div class="arr-right">
@@ -459,141 +460,7 @@
             </div>
         </div>
     </div>
-    <div class="flowerarrival flowerdealv4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="deal-left">
-                        <img src="{{asset('images/uploads/dealv4.png')}}" alt="">
-                        <div class="flow-deal-ct">
-                            <h1>spring flower</h1>
-                            <p class="pink">pink peony</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="arr-right">
-                        <div class="arr-hd">
-                            <h1>Deal of the day</h1>
-                        </div>
-                        <div class="dealv4-right">
-                            <div class="first-it">
-                                <div class="left">
-                                    <p>Categories</p>
-                                    <p>price</p>
-                                    <p>Expire date</p>
-                                </div>
-                                <div class="right">
-                                    <p>flower / Package</p>
-                                    <p>$9.00</p>
-                                    <p>01/11/2016</p>
-                                </div>
-                            </div>
-                            <p class="para">Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit? Uterque enim summo bono fruitur, id est voluptate barbarorum pedibu. Vero mollitia suscipit officiis quia nobis sapiente corrupti ipsum exer</p>
-                            <a href="#" class="pink">shop now</a>
-                        </div>
-                    </div>
-                    <div id="clockdiv" class="time">
-                        <div class="it-time">
-                            <span class="days"></span>
-                            <p>-days-</p>
-                        </div>
-                        <span class="space">:</span>
-                        <div class="it-time">
-						<span class="hours">
-						</span>
-                            <p>-hours-</p>
-                        </div>
-                        <span class="space">:</span>
-                        <div class="it-time">
-						<span class="minutes">
-						</span>
-                            <p>-mins-</p>
-                        </div>
-                        <span class="space">:</span>
-                        <div class="it-time">
-						<span class="seconds">
-						</span>
-                            <p>-secs-</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="floweraboutv2 floweradsv4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="fl-ads3-ct">
-                        <p class="title">Spring summer 2016</p>
-                        <h2>We’ve Unlimited Flower <br> Collections</h2>
-                        <a href="#" class="pink">Shop now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="blog flowerblog">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="blog-fl-title">
-                        <img src="{{asset('images/uploads/blog-line.png')}}" alt="">
-                        <h1>Blog update</h1>
-                        <img src="{{asset('images/uploads/blog-line.png')}}" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="blog-it-left blog-flower">
-                        <div class="post-thumbnail">
-                            <a href="#"><img class="blog-img" src="{{asset('images/uploads/blogflower1.png')}}" alt=""></a>
-                        </div>
-                        <div class="blog-ct-left">
-                            <div class="date">
-                                <span>Octorber 5th, 2016</span>
-                            </div>
-                            <h2><a class="pink" href="blogsingle.html">Health Benefits of a Raw Food</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ligula justo, auctor id posuere sed, gravida non odio. </p>
-                            <a class="readmore2 pink" href="#">/ &nbsp; Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="blog-it-left blog-flower">
-                        <div class="post-thumbnail">
-                            <a href="#"><img class="blog-img" src="{{asset('images/uploads/blogflower2.png')}}" alt=""></a>
-                        </div>
-                        <div class="blog-ct-left">
-                            <div class="date">
-                                <span>Octorber 5th, 2016</span>
-                            </div>
-                            <h2><a class="pink" href="blogsingle.html">Feeding kids organic food</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ligula justo, auctor id posuere sed, gravida non odio. </p>
-                            <a class="readmore2 pink" href="#">/ &nbsp; Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="blog-it-left blog-flower">
-                        <div class="post-thumbnail">
-                            <a href="#"><img class="blog-img" src="{{asset('images/uploads/blogflower3.png')}}" alt=""></a>
-                        </div>
-                        <div class="blog-ct-left">
-                            <div class="date">
-                                <span>Octorber 5th, 2016</span>
-                            </div>
-                            <h2><a class="pink" href="blogsingle.html">Tips for Ripening your Fruit</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ligula justo, auctor id posuere sed, gravida non odio. </p>
-                            <a class="readmore2 pink" href="#">/ &nbsp; Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="subscribe flowersubscribev3">
         <div class="container">
             <div class="row">
