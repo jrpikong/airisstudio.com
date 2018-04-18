@@ -32,6 +32,16 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="{{asset('css/plugins.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+            .push(o)};z.=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+            $.src="https://v2.zopim.com/?5dkkr8GWRMJkWEJYIKntEBHDi533Ejz8";z.t=+new Date;$.
+                type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--End of Zendesk Chat Script-->
 </head>
 <body>
 
@@ -55,6 +65,6 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAguiQMk8GSqnO6GHpkgS8txEqYNXDjp4k&callback=initialize" type="text/javascript"></script
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAguiQMk8GSqnO6GHpkgS8txEqYNXDjp4k&callback=initialize" type="text/javascript"></script>
 </body>
 </html>

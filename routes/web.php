@@ -11,9 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('catalog','CatalogController@index')->name('catalog');
+Route::get('catalog/{category}','CatalogController@byCategory')->name('catalog-by-category');
+Route::get('catalog/{slug}','CatalogController@catalogDetail')->name('catalog-detail');
+
+Route::get('article', 'ArticleController@index')->name('article');
+Route::get('article/{slug}', 'ArticleController@articleDetail')->name('article-deetail');
+
+Route::get('contact-us', 'ContactUsController@index')->name('contact-us');
+Route::post('contact-us', 'ContactUsController@store')->name('contact-uss');
 
 
 Route::group(['prefix' => 'admin'], function () {
