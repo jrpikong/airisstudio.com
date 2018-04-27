@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div id="rev_slider_11_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="flower-04" data-source="gallery" style="background-color:transparent;padding:0px;">
         <!-- START REVOLUTION SLIDER 5.3.1.5 fullscreen mode -->
         <div id="rev_slider_11_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.3.1.5">
@@ -28,7 +29,8 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 5;"><img src="{{asset('images/uploads/flower-01-slide-01-1.png')}}" alt="" data-ww="760px" data-hh="150px" width="760" height="150" data-no-retina> </div>
+                         style="z-index: 5;">
+                        <img src="{{asset('images/uploads/flower-01-slide-01-1.png')}}" alt="" data-ww="760px" data-hh="150px" width="760" height="150" data-no-retina> </div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption lato-24-700   tp-resizeme"
@@ -353,30 +355,16 @@
             <div class="tp-bannertimer" style="height: 5px; background-color: rgba(0, 0, 0, 0.15);"></div>
         </div>
     </div><!-- END REVOLUTION SLIDER -->
+
     <div class="about floweraboutv4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-ms-6 col-xs-12">
-                    <img src="{{asset('images/uploads/flow-ab4.jpg')}}" alt="">
+                    <img src="{{Voyager::image($about->image)}}" alt="">
                 </div>
                 <div class="col-md-6 col-ms-6 col-xs-12">
                     <div class="ab-flow-r">
-                        <div class="ab-intro flowerintro">
-                            <p>We are <span>Online Market</span> of organic fruits, vegetables, juices and dried fruits. Visit our site for a complete list of
-                                exclusive we are stocking.</p>
-                        </div>
-                        <div class="ab-flower-it">
-                            <h1>Always Fresh</h1>
-                            <p>Cur tantas regiones barbarorum peat dibus obiit, tot mariata uisque euismod convallis eros quis lacinia </p>
-                        </div>
-                        <div class="ab-flower-it">
-                            <h1>Keep You Healthy</h1>
-                            <p>Uisque euismod convallis eros quis lacinia enim rhoncu ur tantas regiones barbarorum peat dibus obiit. Uisque euismod convallis eros quis lacinia enim rhoncu ur tantas regiones barbarorum peat dibus obiit</p>
-                        </div>
-                        <div class="ab-flower-it">
-                            <h1>Always Fresh</h1>
-                            <p>Cur tantas regiones barbarorum peat dibus obiit, tot mariata uisque eumod convallis eros quis lacinia enim rhoncu ur tantas regiones barbarorum peat </p>
-                        </div>
+                        {!! $about->body !!}
                     </div>
                 </div>
             </div>
@@ -394,69 +382,21 @@
                     </div>
                 </div>
                 <div class="row arr-slider">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="arr-it v4">
-                            <img src="{{asset('images/uploads/arr1.jpg')}}" alt="">
-                            <div class="arr-text">
-                                <h1><a href="blogsingle.html">Pastel Roses</a></h1>
-                                <span class="date">$ 37.00</span>
+                    @if(!$catalogTopThree->isEmpty())
+                        @foreach($catalogTopThree as $item)
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="arr-it v4">
+                                    <img src="{{Voyager::image($item->images)}}" alt="{{$item->slug}}">
+                                    <div class="arr-text">
+                                        <h1><a href="{{route('catalog-detail',[$item->slug])}}">{{$item->name}}</a></h1>
+                                        <span class="date">Rp. {{number_format($item->price)}}</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="arr-it v4">
-                            <img src="{{asset('images/uploads/arr2.jpg')}}" alt="">
-                            <div class="arr-text">
-                                <h1><a href="blogsingle.html">Pastel Roses</a></h1>
-                                <span class="date">$ 37.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="right-it-3">
-                            <img src="{{asset('images/uploads/banner.png')}}" alt="">
-                            <span>shop now</span>
-                        </div>
-                    </div>
+                        @endforeach
+                    @endif
                 </div>
-                <div class="row arr-slider">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="arr-it v4">
-                            <img src="{{asset('images/uploads/arr1.jpg')}}" alt="">
-                            <div class="arr-text">
-                                <h1><a href="blogsingle.html">Pastel Roses</a></h1>
-                                <span class="date">$ 37.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="arr-it v4">
-                            <img src="{{asset('images/uploads/arr2.jpg')}}" alt="">
-                            <div class="arr-text">
-                                <h1><a href="blogsingle.html">Pastel Roses</a></h1>
-                                <span class="date">$ 37.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="arr-it v4">
-                            <img src="{{asset('images/uploads/arr1.jpg')}}" alt="">
-                            <div class="arr-text">
-                                <h1><a href="blogsingle.html">Pastel Roses</a></h1>
-                                <span class="date">$ 37.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="arr-it v4">
-                            <img src="{{asset('images/uploads/arr2.jpg')}}" alt="">
-                            <div class="arr-text">
-                                <h1><a href="blogsingle.html">Pastel Roses</a></h1>
-                                <span class="date">$ 37.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

@@ -1,52 +1,3 @@
-<div id="mySidenav" class="sidenav">
-    <p>We are <span>Online Market </span>of organic fruits, vegetables, juices and dried fruits. Visitour site for a complete list of exclusive we are stocking.</p>
-    <div class="search">
-        <input type="text" class="" placeholder="Search..."><i class="ion-ios-search-strong"></i>
-    </div>
-    <h2>Useful Links</h2>
-    <div class="menu">
-        <div class="menu-left">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-        </div>
-        <div class="menu-right">
-            <a href="#">Shop</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>
-    <img src="{{asset('images/uploads/div-line.png')}}" alt="" class="div-line">
-    <h2>Contact Us</h2>
-    <div class="ct-it ct-icon">
-        <a href="#"><i class="fa fa-facebook fb" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter tw" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
-        <a href="#"><i class="fa fa-youtube-play yt" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Youtube"></i></a>
-        <a href="#"><i class="fa fa-vimeo vm" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Vimeo"></i></a>
-    </div>
-    <img src="{{asset('images/uploads/div-line.png')}}" alt="" class="div-line">
-    <div class="btn-sidebar-r">
-        <a href="#" class="login">Login</a>
-        <a href="#" class="login">SignUp</a>
-    </div>
-    <a href="#" class="closebtn"><i class="ion-android-close"  data-toggle="tooltip" data-placement="left" title="Close"></i></a>
-</div>
-<div id="sideNav2" class="sidenav">
-    <p class="cart-product">No products in the cart</p>
-    <a href="#" class="closebtn2"><i class="ion-android-close"  data-toggle="tooltip" data-placement="left" title="Close"></i></a>
-</div>
-<div id="sideNav3" class="sidenav">
-    <p class="cart-product">No products in the cart</p>
-    <a href="#" class="closebtn3"><i class="ion-android-close"  data-toggle="tooltip" data-placement="left" title="Close"></i></a>
-</div>
-<div id="sideNav4" class="sidenav">
-    <p class="cart-product">No products in the cart</p>
-    <a href="#" class="closebtn4"><i class="ion-android-close"  data-toggle="tooltip" data-placement="left" title="Close"></i></a>
-</div>
-<div id="sideNav5" class="sidenav">
-    <p class="cart-product">No products in the cart</p>
-    <a href="#" class="closebtn5"><i class="ion-android-close"  data-toggle="tooltip" data-placement="left" title="Close"></i></a>
-</div>
 <!-- menu for mobile -->
 <div class="mobile-menu">
     <nav id="menu">
@@ -54,7 +5,7 @@
             <li><a href="landing.html">Landing</a></li>
             <li><a href="#">Home</a><i class="ion-ios-arrow-down it1"></i>
                 <ul class="sub-menu sub1">
-                    <li><a href="index.html">Oganic Shop</a></li>
+                    <li><a href="index.html">Oganic Shops</a></li>
                     <li><a href="home2.html">Oganic Store</a></li>
                     <li><a href="home3.html">Oganic Mart</a></li>
                     <li><a href="home4.html">Oganic Farm</a></li>

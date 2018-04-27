@@ -14,7 +14,7 @@
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('catalog','CatalogController@index')->name('catalog');
-Route::get('catalog/{category}','CatalogController@byCategory')->name('catalog-by-category');
+Route::get('catalog/category/{category}','CatalogController@byCategory')->name('catalog-by-category');
 Route::get('catalog/{slug}','CatalogController@catalogDetail')->name('catalog-detail');
 
 Route::get('article', 'ArticleController@index')->name('article');
