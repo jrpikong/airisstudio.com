@@ -49,7 +49,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 6; white-space: nowrap; color: rgba(51, 51, 51, 1.00);text-transform:uppercase;letter-spacing:.7em;">Fresh for Spring </div>
+                         style="z-index: 6; white-space: nowrap; color: rgba(51, 51, 51, 1.00);text-transform:uppercase;letter-spacing:.7em;">Fresh for {{$catalog->name}} </div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption play-120-700   tp-resizeme rs-parallaxlevel-1"
@@ -69,7 +69,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 7; white-space: nowrap;">Spring Flower </div>
+                         style="z-index: 7; white-space: nowrap;">{{$catalog->name}}</div>
 
                     <!-- LAYER NR. 4 -->
                     <div class="tp-caption   tp-resizeme rs-parallaxlevel-2"
@@ -109,7 +109,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 9; white-space: nowrap;font-style:italic;letter-spacing:.2em;">Spring 2017 </div>
+                         style="z-index: 9; white-space: nowrap;font-style:italic;letter-spacing:.2em;"> </div>
                 </li>
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -120,21 +120,17 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="fl-ads3-ct">
-                        <p class="title">Spring summer 2016</p>
-                        <h2>We’ve Unlimited Flower <br> Collections</h2>
-                        <p>Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit? Uterque enim summo bono fruitur, id est voluptate barbarorum pedibu. Vero mollitia suscipit officiis quia nobis sapiente corrupti ipsum exer</p>
-                        <a href="#" class="pink">Shop now</a>
-                    </div>
-                    <img src="{{asset('images/uploads/flow-ab1.png')}}" alt="" class="ab-img">
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <img src="{{asset('images/uploads/flow-ab1.png')}}" alt="" class="ab-img-r">
-                    <div class="fl-ads3-ct">
                         <div class="heading-sec">
                             <h4 class="grey">-Flower store-</h4>
-                            <h1>Organie <br><span>store</span></h1>
+                            <h2>{{$catalog->name}} <br><span>store</span></h2>
                         </div>
-                        <p>Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit? Uterque enim summo bono fruitur, id est voluptate barbarorum pedibu. Vero mollitia suscipit officiis quia nobis sapiente corrupti ipsum exer</p>
+                    </div>
+                    <img src="{{Voyager::image($catalog->images)}}" alt="" class="ab-img img-responsive">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="{{Voyager::image($catalog->second_images)}}" alt="" class="ab-img-r img-responsive">
+                    <div class="fl-ads3-ct">
+                        {!! $catalog->body !!}
                         <a href="#" class="pink">Shop now</a>
                     </div>
                 </div>

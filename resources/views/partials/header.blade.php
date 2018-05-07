@@ -13,7 +13,7 @@
                             </div>
                         </div>
                         <div class="col-md-7">
-                            <a class="hd-logo" href="index.html"><img  class="logo-2" src="{{asset('images/main-logo.png')}}" alt=""></a>
+                            <a class="hd-logo" href="/"><img  class="logo-2" src="{{asset('images/main-logo.png')}}" alt=""></a>
                         </div>
                     </div>
                 </div>

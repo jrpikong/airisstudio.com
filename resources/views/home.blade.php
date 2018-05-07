@@ -356,6 +356,7 @@
         </div>
     </div><!-- END REVOLUTION SLIDER -->
 
+    @if($about)
     <div class="about floweraboutv4">
         <div class="container">
             <div class="row">
@@ -370,6 +371,7 @@
             </div>
         </div>
     </div>
+    @endif
     
     <div class="flowerarrival trending trendingv4">
         <div class="container">
