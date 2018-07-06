@@ -24,10 +24,10 @@ class HomeController extends Controller
         $validatedData = $request->validate([
             'email' => 'required|email'
         ]);
-        $data = $request->all();
-        unset($data['_token']);
 
-        $insert = Subscribe::insert($data);
+        $insert = new Subscribe;
+        $insert->email = $request->email;
+        $insert->save();
 
         if (!$insert) {
             Session::flash('alert-danger', 'Please Post Again');

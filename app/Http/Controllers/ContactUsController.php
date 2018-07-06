@@ -23,9 +23,14 @@ class ContactUsController extends Controller
             'message' => 'required',
         ]);
 
-        $data = $request->all();
-        unset($data['_token']);
-        $insert = ContactUs::insert($data);
+        $insert = new ContactUs;
+        $insert->name = $request->name;
+        $insert->email = $request->email;
+        $insert->phone = $request->phone;
+        $insert->subject = $request->subject;
+        $insert->message = $request->message;
+        $insert->save();
+
         if (!$insert) {
             Session::flash('alert-danger', 'Please Post Again');
             return view('contact_us');

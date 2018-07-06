@@ -7,8 +7,8 @@
             <div class="col-md-12">
                 <h1>blog list 01</h1>
                 <ul class="breadcumb">
-                    <li><a href="#">Home</a></li>
-                    <li><span>/</span>Blog list 01</li>
+                    <li><a href="/">Home</a></li>
+                    <li><span>/</span>Blog list</li>
                 </ul>
             </div>
         </div>
