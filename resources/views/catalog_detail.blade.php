@@ -121,8 +121,8 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="fl-ads3-ct">
                         <div class="heading-sec">
-                            <h4 class="grey">-Flower store-</h4>
-                            <h2>{{$catalog->name}} <br><span>store</span></h2>
+                            <h4 class="grey">-by Airisstudio.com-</h4>
+                            <h2>{{$catalog->name}} <br><span></span></h2>
                         </div>
                     </div>
                     <img src="{{Voyager::image($catalog->images)}}" alt="" class="ab-img img-responsive">
@@ -131,13 +131,12 @@
                     <img src="{{Voyager::image($catalog->second_images)}}" alt="" class="ab-img-r img-responsive">
                     <div class="fl-ads3-ct">
                         {!! $catalog->body !!}
-                        <a href="#" class="pink">Shop now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+{{--
     <section class="productdetail blogsingle shoplist">
         <div class="container">
             <div class="row">
@@ -164,7 +163,6 @@
 											 	</span>
 											</span>
                                                 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Indemon strunt lectores legere me lius quod ii legunt saepiu laritas est etiam pro</p>
-                                                <a class="reply" href="#"><i class="fa fa-reply" aria-hidden="true"></i>Comment</a>
                                             </div>
                                         </div>
                                     </div>
@@ -172,7 +170,7 @@
                             </div>
                         </div>
                         <!-- comment form -->
-                        <form action="#" class="post-cmt">
+                        <form action="{{route('comment')}}" class="post-cmt">
                             <label>Add a Review</label>
                             <div class="row">
                                 <div class="col-md-4 col-sm-4 col-xs-12">
@@ -196,5 +194,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
 @endsection

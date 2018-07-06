@@ -12,16 +12,16 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-
+Route::post('/subscribe', 'HomeController@subscribe')->name('subscribe');
 Route::get('catalog','CatalogController@index')->name('catalog');
-Route::get('catalog/category/{category}','CatalogController@byCategory')->name('catalog-by-category');
+Route::get('catalog/category/{slug}','CatalogController@byCategory')->name('catalog-by-category');
 Route::get('catalog/{slug}','CatalogController@catalogDetail')->name('catalog-detail');
 
 Route::get('article', 'ArticleController@index')->name('article');
 Route::get('article/{slug}', 'ArticleController@articleDetail')->name('article-deetail');
 
 Route::get('contact-us', 'ContactUsController@index')->name('contact-us');
-Route::post('contact-us', 'ContactUsController@store')->name('contact-uss');
+Route::post('contact-us', 'ContactUsController@store')->name('contact-us');
 
 
 Route::group(['prefix' => 'admin'], function () {

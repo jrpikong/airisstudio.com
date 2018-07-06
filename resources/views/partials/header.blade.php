@@ -36,7 +36,7 @@
                                 <li><a href="{{route('catalog')}}"><i class="ion-ios-minus-empty"></i>All Catalog</a></li>
                                 @if(!$categoryCatalog->isEmpty())
                                     @foreach($categoryCatalog as $item)
-                                        <li><a href="{{route('catalog-detail',[$item->slug])}}"><i class="ion-ios-minus-empty"></i>{{$item->tile}}</a></li>
+                                        <li><a href="{{route('catalog-by-category',[$item->slug])}}"><i class="ion-ios-minus-empty"></i>{{$item->tile}}</a></li>
                                     @endforeach
                                 @endif
                             </ul>

@@ -12221,3 +12221,15 @@ footer.ht-footer.flowerft .ft-contact {
 footer.ht-footer.flowerft .ft-contact .ct-icon a:hover i {
   background-color: #f49ac1;
 }
+
+/*Custom Airis*/
+
+.is-invalid {
+  border: 1px solid red !important;
+}
+.invalid-feedback{
+  color: red;
+}
+footer.ht-footer{
+  padding-top: 0;
+}
